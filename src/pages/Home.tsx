@@ -103,7 +103,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                JASS FREIGHT BROKERAGE is a <span className="font-bold text-primary">premier</span> freight brokerage specializing in refrigerated and temperature-controlled transportation solutions across the United States. Founded by <span className="font-bold text-primary">Abdullahi Ali</span>, we deliver dependable cold chain logistics services for food, fresh produce, frozen goods, and other temperature-sensitive freight with precision, compliance, and care.
+                JASS FREIGHT BROKERAGE is a <span className="font-bold text-primary">premier</span> freight brokerage specializing in refrigerated and temperature-controlled transportation solutions across the United States. Founded by <span className="font-bold text-primary">Ali</span>, we deliver dependable cold chain logistics services for food, fresh produce, frozen goods, and other temperature-sensitive freight with precision, compliance, and care.
               </p>
               <p>
                 We do more than move freight. we build strategic logistics partnerships focused on reliability and performance. From refrigerated truckload shipments to time-critical temperature-sensitive deliveries, our commitment to integrity, efficiency, and customer satisfaction ensures your cargo arrives safely and on schedule.
