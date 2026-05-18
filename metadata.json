@@ -1,0 +1,8 @@
+{
+  "name": "JASS FREIGHT BROKERAGE - Elite Logistics",
+  "description": "Professional freight brokerage and logistics solutions provided by JASS FREIGHT BROKERAGE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
