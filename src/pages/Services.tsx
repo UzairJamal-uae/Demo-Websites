@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const services = [
     {
-      title: "Flatbed Freight",
-      description: "Specialized solutions for heavy equipment, construction materials, and oversized loads that require open transport.",
+      title: "Reefer Freight",
+      description: "specializing in refrigerated and temperature-controlled transportation solutions across the United States.",
       icon: Truck,
       color: "blue",
-      features: ["Heavy equipment & machinery", "Oversized & wide loads", "Steel, coil & building materials", "Agricultural equipment"],
-      details: "Our flatbed network is managed by experienced dispatchers who understand the complexities of securement and permitting for high-value industrial cargo."
+      features: ["Refrigerated", "Frozen Foods", "Temperature Controlled", "Medicines"],
+      details: "We do more than move freight — we build strategic logistics partnerships focused on reliability and performance. From refrigerated truckload shipments to time-critical temperature-sensitive deliveries,"
     },
     {
       title: "Box Truck Freight",

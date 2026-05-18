@@ -17,7 +17,7 @@ export const Footer = () => {
               </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              Professional freight brokerage delivering elite, compliance-driven transportation solutions. We apply precision logistics strategies to protect your assets and meet your delivery goals.
+              JASS FREIGHT BROKERAGE is a trusted freight brokerage specializing in refrigerated and temperature-controlled transportation solutions, we deliver dependable cold chain logistics services for food, frozen goods, and other temperature-sensitive freight with compliance, and care.
             </p>
             <div className="bg-white/[0.03] p-6 rounded-2xl border border-white/10 shadow-inner">
                <p className="text-xs italic text-slate-400 leading-relaxed">"Reliable brokerage connecting top-tier carriers with professional shippers."</p>

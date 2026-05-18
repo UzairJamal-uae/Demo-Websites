@@ -47,7 +47,7 @@ const Hero = () => {
           className="grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-2 md:gap-4 mb-10 px-4 max-w-2xl mx-auto"
         >
           {[
-            "Same-Day Delivery", "Expedited Freight", "Medical Courier", "Final-Mile Delivery"
+            "Same-Day Delivery", "Expedited Freight", "Refrigerated", "Temperature Controlled"
           ].map((feature) => (
             <div key={feature} className="flex items-center gap-2 bg-black/40 px-3 py-2 md:px-6 md:py-3 rounded-full border border-white/10 backdrop-blur-md w-full md:w-auto justify-center md:justify-start">
               <CheckCircle2 size={16} className="text-[#818cf8] shrink-0" />
@@ -62,7 +62,7 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
           className="text-sm text-white font-bold mb-10 flex items-center justify-center gap-3 drop-shadow-lg"
         >
-          <span className="text-lg">📦</span> Serving businesses with reliable logistics and professional delivery services.
+          <span className="text-lg">📦</span> Serving businesses with reliable refrigerated and temperature-controlled shipping expertise for years.
         </motion.div>
 
         <motion.div 
@@ -103,10 +103,10 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                JASS FREIGHT BROKERAGE is a <span className="font-bold text-primary">premier</span> freight brokerage specializing in elite, compliance-driven transportation solutions. Founded by <span className="font-bold text-primary">Abdullahi Ali</span>, we apply professional logistics expertise to deliver precision and reliability for shippers who demand excellence.
+                JASS FREIGHT BROKERAGE is a <span className="font-bold text-primary">premier</span> freight brokerage specializing in refrigerated and temperature-controlled transportation solutions across the United States. Founded by <span className="font-bold text-primary">Abdullahi Ali</span>, we deliver dependable cold chain logistics services for food, fresh produce, frozen goods, and other temperature-sensitive freight with precision, compliance, and care.
               </p>
               <p>
-                We don’t just move freight; we provide strategic logistics partnerships. Whether it’s complex flatbed loads or time-critical box truck deliveries, we operate with an unshakeable commitment to integrity and performance.
+                We do more than move freight. we build strategic logistics partnerships focused on reliability and performance. From refrigerated truckload shipments to time-critical temperature-sensitive deliveries, our commitment to integrity, efficiency, and customer satisfaction ensures your cargo arrives safely and on schedule.
               </p>
             </div>
             <Link to="/contact" className="mt-8 inline-block bg-primary text-white px-8 py-3 rounded font-bold hover:bg-opacity-90 transition-all shadow-lg">
@@ -145,7 +145,7 @@ const WhyChooseUs = () => {
   const cards = [
     { title: "Nationwide Coverage", desc: "Seamless transport across the contiguous United States.", icon: Globe },
     { title: "Dedicated Fleets", desc: "Specialized flatbed & box truck capacity ready to roll.", icon: Truck },
-    { title: "Real-Time Tracking", desc: "Full visibility from pickup to delivery for peace of mind.", icon: MapPin },
+    { title: "Real-Time Market Experience", desc: "We have more than 10 years of experience in our niche.", icon: MapPin },
     { title: "Trusted Carriers", desc: "Fully insured and vetted network of professional drivers.", icon: Star },
   ];
 
@@ -181,11 +181,11 @@ const WhyChooseUs = () => {
 const CoreServices = () => {
   const services = [
     {
-      title: "Flatbed Freight",
-      description: "Specialized solutions for heavy equipment and construction materials.",
+      title: "Reefer Freight",
+      description: "Specialized solutions for Refrigerated and Temperature Controlled.",
       icon: Truck,
       color: "blue",
-      features: ["Heavy equipment & machinery", "Oversized & wide loads", "Steel, coil & building materials", "Agricultural equipment"]
+      features: ["Refrigerated", "Frozen Foods", "Temperature Controlled", "Medicines"]
     },
     {
       title: "Box Truck Freight",
@@ -308,12 +308,12 @@ const HowItWorks = () => {
 
 const Industries = () => {
   const items = [
-    { name: "Manufacturing", icon: Building2 },
+    { name: "Meat Supplies", icon: Building2 },
     { name: "Medical & Pharma", icon: Shield },
-    { name: "Automotive", icon: Truck },
-    { name: "Retail & E-commerce", icon: Package },
-    { name: "Legal Services", icon: Building2 },
-    { name: "Distribution", icon: MapPin },
+    { name: "Food Transportation", icon: Truck },
+    { name: "Retail & B2B", icon: Package },
+    { name: "Cold Chain Freights", icon: Building2 },
+    { name: "Pharmaceutical", icon: MapPin },
   ];
 
   return (
@@ -460,49 +460,7 @@ const Home = () => {
       <Industries />
       <ContactAndQuote />
       {/* Testimonials */}
-      <section className="py-32 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-primary mb-20">Trusted by Companies & Carriers</h2>
-          <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                name: "Sarah J.",
-                role: "Operations Manager",
-                company: "ConstructCo",
-                content: "Dependable drivers and clear communication — highly recommended for any enterprise project requiring precise logistics."
-              },
-              {
-                name: "Mike T.",
-                role: "Logistics Director",
-                company: "SteelWorks Inc.",
-                content: "JASS FREIGHT helped us move critical flatbed freight when no one else could. Their dedication saved our production schedule."
-              },
-              {
-                name: "Jessica R.",
-                role: "Supply Chain Lead",
-                company: "Retail Brands Global",
-                content: "Professional service from start to finish. The best box truck fleet we've used for our distribution needs."
-              }
-            ].map((t, idx) => (
-              <motion.div
-                key={t.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.2 }}
-                viewport={{ once: true }}
-                className="bg-slate-50 p-12 rounded-[3rem] text-left relative overflow-hidden group hover:bg-primary transition-all duration-500"
-              >
-                <div className="text-primary text-8xl font-serif absolute -top-4 left-6 opacity-5 group-hover:text-white transition-colors">"</div>
-                <p className="text-slate-600 mb-10 pt-4 relative z-10 italic group-hover:text-white/80 transition-colors leading-relaxed">"{t.content}"</p>
-                <div className="border-t border-slate-200 pt-6 group-hover:border-white/20 transition-colors">
-                  <h4 className="font-bold text-primary group-hover:text-white transition-colors">{t.name}</h4>
-                  <p className="text-xs text-slate-400 group-hover:text-white/60 transition-colors tracking-wide uppercase">{t.role}, {t.company}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
       
       {/* Call to Action */}
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
