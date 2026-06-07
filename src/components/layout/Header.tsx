@@ -52,15 +52,7 @@ export const Header = () => {
               <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all group-hover:w-full ${location.pathname === item.path ? "w-full" : "w-0"}`}></span>
             </Link>
           ))}
-          <div className="relative group/portal">
-            <button className={`text-sm font-bold transition-colors ${!isTransparent ? "text-slate-700" : "text-white"} hover:text-accent flex items-center gap-1 cursor-default group-hover/portal:text-accent`}>
-              Portals <ChevronDown size={14} className="mt-0.5 group-hover/portal:rotate-180 transition-transform duration-300" />
-            </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-48 bg-white rounded-xl shadow-2xl border border-slate-100 opacity-0 invisible group-hover/portal:opacity-100 group-hover/portal:visible transition-all py-2 translate-y-2 group-hover/portal:translate-y-0 text-slate-800">
-              <Link to="/portal/shipper" className="block px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-accent transition-colors">Shipper Portal</Link>
-              <Link to="/portal/carrier" className="block px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-accent transition-colors">Carrier Portal</Link>
-            </div>
-          </div>
+          
         </nav>
 
         <div className="hidden lg:flex items-center gap-6">
