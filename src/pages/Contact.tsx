@@ -95,24 +95,43 @@ const Contact = () => {
               <MessageSquare size={32} className="text-primary" />
               <h2 className="text-3xl font-black text-primary">Send a Message</h2>
             </div>
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  className="space-y-6"
+>
+  <input
+  type="hidden"
+  name="form-name"
+  value="contact"
+/>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-xs font-black text-slate-600 uppercase tracking-wider ml-1">Name</label>
-                  <input type="text" placeholder="John Doe" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none" />
+                  <input
+type="text"
+name="name"
+placeholder="John Doe" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black text-slate-600 uppercase tracking-wider ml-1">Company</label>
-                  <input type="text" placeholder="Logistics Co" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none" />
+                  <input
+type="text"
+name="company"
+placeholder="Logistics Co" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none" />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-black text-slate-600 uppercase tracking-wider ml-1">Work Email</label>
-                <input type="email" placeholder="john@company.com" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none" />
+                <input
+type="email"
+name="email"
+placeholder="john@company.com" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none" />
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-black text-slate-600 uppercase tracking-wider ml-1">Subject</label>
-                <select className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none font-bold">
+                <select name="subject" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all outline-none font-bold">
                   <option>General Inquiry</option>
                   <option>Carrier Partnership</option>
                   <option>Shipper Assistance</option>
@@ -121,9 +140,9 @@ const Contact = () => {
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-black text-slate-600 uppercase tracking-wider ml-1">Message</label>
-                <textarea placeholder="How can our logistics team help you today?" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl h-48 focus:bg-white transition-all outline-none"></textarea>
+                <textarea name="message" placeholder="How can our logistics team help you today?" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl h-48 focus:bg-white transition-all outline-none"></textarea>
               </div>
-              <button className="w-full bg-primary py-5 rounded-2xl text-white font-black text-lg shadow-xl shadow-primary/20 hover:bg-slate-800 transition-all active:scale-[0.98]">
+              <button type="submit" className="w-full bg-primary py-5 rounded-2xl text-white font-black text-lg shadow-xl shadow-primary/20 hover:bg-slate-800 transition-all active:scale-[0.98]">
                 EXECUTE MESSAGE SEND
               </button>
             </form>
